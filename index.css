@@ -21,7 +21,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/pattern-background-desktop.svg);
+  background-image: url(./images/background-img.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .card{
   width: 20rem;
