@@ -28,6 +28,7 @@
   background-size: 100%;
 }
 .card{
+  box-shadow: 1px 1px 1rem #0000;
   width: 20rem;
   height: 30rem;
   background-color: #fff;
