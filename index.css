@@ -99,6 +99,10 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+.container-descri>button:hover{
+  text-decoration: none;
+}
 .btns{
   position: absolute;
   bottom: 1em;
@@ -123,8 +127,17 @@
   margin: 1rem;
   border-radius: .4rem;
   font-weight: bolder;
+  transition: all .2s;
+}
+.btns>.btn-payment:hover{
+  background-color: rgb(87, 86, 130);
 }
 .btns>.btn-cancel-order{
   color: var(--color-Desaturated--blue);
   font-weight: bolder;
+  transition: all .4s;
+}
+.btn-cancel-order:hover{
+  color:slateblue;
+  
 }
