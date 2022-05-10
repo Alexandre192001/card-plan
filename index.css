@@ -22,10 +22,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./images/background-img.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 .card{
   box-shadow: 1px 1px 1rem #0000;
