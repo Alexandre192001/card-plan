@@ -1,20 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Lobster&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Red+Hat+Display&family=Shojumaru&display=swap');*{
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Lobster&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Red+Hat+Display&family=Shojumaru&display=swap");
+/* Zerando valores padrões */
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
-
-:root{
-  --blue-primary-color--:hsl(228, 16%, 69%);
-  --blueBrigth-color--:hsl(247, 53%, 23%);
-  --fontStyle-body--:"Red Hat Display";
-  --fontSize-Paragrapho:16px;
+/* Criando variaveis */
+:root {
+  --blue-primary-color--: hsl(228, 16%, 69%);
+  --blueBrigth-color--: hsl(247, 53%, 23%);
+  --fontStyle-body--: "Red Hat Display";
+  --fontSize-Paragrapho: 16px;
   /*Neutras*/
   --color-Very--blue--: hsl(225, 100%, 98%);
-  --color-Desaturated--blue:hsl(224, 23%, 55%);
+  --color-Desaturated--blue: hsl(224, 23%, 55%);
   --colorDark--blue: hsl(223, 47%, 23%);
 }
-.sessao-principal{
+/* Container da sessão principal */
+.sessao-principal {
   background-color: rgb(42, 42, 56);
   height: 100vh;
   width: 100%;
@@ -23,88 +26,100 @@
   justify-content: center;
   align-items: center;
 }
-.card{
+/* Card */
+.card {
   box-shadow: 1px 1px 1rem #0000;
   width: 20rem;
   height: 30rem;
   background-color: #fff;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.card>.img-card{
+/* Imagem do card - card */
+.card > .img-card {
   position: absolute;
   width: 100%;
   height: 35%;
   top: 0;
   object-fit: cover;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
 }
-.img-card>img{
+/* imagem de fundo  */
+.img-card > img {
   width: 100%;
   height: 100%;
-  border-top-left-radius: .4rem;
-  border-top-right-radius: .4rem;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
 }
-.title-card{
+/* Titulo do card - container */
+.title-card {
   position: absolute;
   top: 10rem;
   font-family: var(--fontStyle-body--);
   text-align: center;
   margin: 2rem 0;
 }
-.title-card>h1{
+/* Formatação do titulo */
+.title-card > h1 {
   color: var(--blueBrigth-color--);
   font-size: var(--fontStyle-body--);
-  font-weight:900;
+  font-weight: 900;
   font-size: 20px;
 }
-.title-card>p{
+/* Paragrafo do paragrafo */
+.title-card > p {
   font-size: var(--fontSize-Paragrapho);
   color: var(--color-Desaturated--blue);
 }
-
-.container-descri{
+/* Container da descrição do card */
+.container-descri {
   display: flex;
   position: absolute;
   top: 18rem;
   width: 90%;
   background-color: rgba(214, 214, 220, 0.474);
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   height: 4rem;
   justify-content: space-around;
   align-items: center;
 }
-.container-descri>.plan>h3{
+
+/* Estilizando subtitulo do card */
+.container-descri > .plan > h3 {
   font-family: var(--fontStyle-body--);
   font-size: var(--fontSize-Paragrapho);
   color: var(--blueBrigth-color--);
 }
-.container-descri>.plan>p{
+/* paragrafo do plano */
+.container-descri > .plan > p {
   font-family: var(--fontStyle-body--);
   color: var(--color-Desaturated--blue);
   font-size: 13px;
 }
-
-.plan{
-  justify-content:baseline;
+/* Planos */
+.plan {
+  justify-content: baseline;
 }
-.container-descri>button{
+
+/* Botão para adquirir plano*/
+.container-descri > button {
   border: none;
   font-family: var(--fontStyle-body--);
-  color:rgb(103, 94, 150);
+  color: rgb(103, 94, 150);
   font-weight: bolder;
   cursor: pointer;
   text-decoration: underline;
 }
-
-.container-descri>button:hover{
+/* Animação de hover  */
+.container-descri > button:hover {
   text-decoration: none;
 }
-.btns{
+/* Botões para cancelar ou finalizar compra */
+.btns {
   position: absolute;
   bottom: 1em;
   width: 100%;
@@ -112,33 +127,37 @@
   align-items: center;
   flex-direction: column;
 }
-
-.btns>button{
+/* Selecionando todos os botões do container */
+.btns > button {
   border: none;
   margin: 10px;
   background-color: transparent;
   cursor: pointer;
 }
-.btns>.btn-payment{
+/* Botão de pagamento */
+.btns > .btn-payment {
   position: relative;
   color: #fff;
-  background-color:var(--blueBrigth-color--);
+  background-color: var(--blueBrigth-color--);
   width: 90%;
   height: 2rem;
   margin: 1rem;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   font-weight: bolder;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-.btns>.btn-payment:hover{
+/* Adicionando animação de hover */
+.btns > .btn-payment:hover {
   background-color: rgb(87, 86, 130);
 }
-.btns>.btn-cancel-order{
+/* Estilização do botão para cancelar compra */
+.btns > .btn-cancel-order {
   color: var(--color-Desaturated--blue);
   font-weight: bolder;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-.btn-cancel-order:hover{
-  color:slateblue;
-  
+
+/* Animação de hover no botão de cancelar compra */
+.btn-cancel-order:hover {
+  color: slateblue;
 }

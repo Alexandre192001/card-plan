@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Front end mentor - Card</title>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-  <section class="sessao-principal">
+  <!-- container main -->
+  <main class="sessao-principal">
+    <!-- Wrapper do card -->
     <div class="card-wrapper">
+      <!-- container card -->
       <div class="card">
+        <!-- Imagem do card -->
         <div class="img-card"><img src="./images/card-top.jpg" alt=""></div>
+        <!-- Titulo do card -->
         <div class="title-card">
           <h1 class="titulo">Order Summary</h1>
+          <!-- Descrição -->
           <p>You can now listen to millions of songs audiobooks,
-             and podcast on any device anywhere you like!</p>
+            and podcast on any device anywhere you like!</p>
         </div>
+        <!-- Container de musica -->
         <div class="container-descri">
           <div class="img-music">
             <i class="fas fa-music"></i>
-          </div>  
+          </div>
+          <!-- Planos -->
           <div class="plan">
             <h3>Annual Plan</h3>
             <p>$159,99/year</p>
           </div>
+          <!-- Botão de adquirir plano -->
           <button>Change</button>
         </div>
+        <!-- Botão para finalizar ou cancelar compra -->
         <div class="btns">
           <button class="btn-payment">Proceed to Payment</button>
           <button class="btn-cancel-order">Cancel Order</button>
         </div>
       </div>
     </div>
-  </section>
+  </main>
 </body>
+
 </html>
