@@ -16,5 +16,5 @@
 
 <hr>
 
-LINK: https://card-music-front-end-desafio.netlify.app/
+Link: https://card-music-front-end-desafio.netlify.app/
 
