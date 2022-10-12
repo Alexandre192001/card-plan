@@ -18,11 +18,19 @@
 }
 /* Container da sessão principal */
 .sessao-principal {
-  background-color: rgb(42, 42, 56);
+  background-color: rgb(107, 107, 140);
   height: 100vh;
   width: 100%;
   overflow: hidden;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Container do card */
+.card-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -160,4 +168,16 @@
 /* Animação de hover no botão de cancelar compra */
 .btn-cancel-order:hover {
   color: slateblue;
+}
+
+@media(max-width:320px){
+  .sessao-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  }
+  .card{
+    width: 90%;
+  }
 }
